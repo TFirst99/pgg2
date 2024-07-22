@@ -7,7 +7,7 @@ function updateContent() {
      
      var width = $('.rect_outsideCon').width();
               
-     $.post("php/earnings.php", { type: "contribution", grp : group, pbnr : PbNr, multiplier : multiplier }, processAndShow);
+     $.post("/api/earnings", { type: "contribution", grp : group, pbnr : PbNr, multiplier : multiplier }, processAndShow);
       
      function processAndShow(data) {
       
@@ -79,7 +79,7 @@ $(document).ready(function() {
           //$('.inner').append(group);
           //$('.inner').append(PbNr);
           
-          $.post("php/js_round.php", { grp: group, pbnr : PbNr }, round);
+          $.post("/api/js_round", { grp: group, pbnr : PbNr }, round);
           
           function round(data) {
                

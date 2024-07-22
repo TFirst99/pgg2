@@ -217,7 +217,7 @@ else if(cubicle == 33) {
 
 // update status
 
-$.post('php/status.php', { stage : stage, group : group, pbnr : PbNr, change : 'change' }, xxx, 'text');
+$.post('api/status', { stage : stage, group : group, pbnr : PbNr, change : 'change' }, xxx, 'text');
 
 function xxx(data) {
      
@@ -254,7 +254,7 @@ function normal_random(mean, variance) {
 }
 
 function getReady() {
-     $.post('php/status.php', { stage : stage, group : group, pbnr : PbNr }, switchResp, 'text');
+     $.post('api/status', { stage : stage, group : group, pbnr : PbNr }, switchResp, 'text');
 }
 
 function switchResp(data) {
@@ -331,7 +331,7 @@ $(document).ready(function() {
                
           }
                                                   
-          $.post('php/redirect.php', { group : group, pbnr : PbNr }, redirect, 'text');
+          $.post('/api/redirect', { group : group, pbnr : PbNr }, redirect, 'text');
           
      }
      

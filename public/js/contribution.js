@@ -82,7 +82,7 @@ $(document).ready(function() {
                }
 
 			function addData() {
-				$.post("php/add.php", { type: "contribution", grp: group, pbnr : PbNr, contr : contr, RT : elapsed, errors : error_count }, test).error(function() {   
+				$.post("/api/add", { type: "contribution", grp: group, pbnr : PbNr, contr : contr, RT : elapsed, errors : error_count }, test).error(function() {   
 					setTimeout(addData, 700);   
 					});				
 			}

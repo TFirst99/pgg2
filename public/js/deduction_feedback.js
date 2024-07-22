@@ -6,7 +6,7 @@ function updateContent() {
 
      // rounds
 
-      $.post("php/js_round.php", { grp: group, pbnr : PbNr }, append_round);
+      $.post("/api/js_round", { grp: group, pbnr : PbNr }, append_round);
 
       function append_round(data) {
 
@@ -58,7 +58,7 @@ function updateContent() {
        var ef4 = 1.0;
        var ef5 = 1.0;
 
-       $.post("php/get.php", { type: "effectiveness", grp: group, pbnr : PbNr, round : round_selected  }, processAndShowCosts, 'text');
+       $.post("/api/get", { type: "effectiveness", grp: group, pbnr : PbNr, round : round_selected  }, processAndShowCosts, 'text');
 
        function processAndShowCosts(data) {
 
@@ -91,7 +91,7 @@ function updateContent() {
 
 
 
-            $.post("php/get.php", { type: "deduction", grp: group, pbnr : PbNr, round : round_selected }, processAndShowDP); 
+            $.post("/api/get", { type: "deduction", grp: group, pbnr : PbNr, round : round_selected }, processAndShowDP); 
 
             function processAndShowDP(data) { 
 
@@ -328,7 +328,7 @@ function updateContent() {
 
        var width = $('.rect_outsideCon').width();
 
-       $.post("php/get.php", { type: "contribution", grp: group, pbnr : PbNr, round : round_selected   }, processAndShow);
+       $.post("/api/get", { type: "contribution", grp: group, pbnr : PbNr, round : round_selected   }, processAndShow);
 
        function processAndShow(data) {
 

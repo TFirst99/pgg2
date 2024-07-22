@@ -13,7 +13,7 @@ $(document).ready(function() {
           
           evt.preventDefault();
           
-          $.post('php/fin.php', { group : group, pbnr : PbNr, }, redirect, 'text');
+          $.post('/api/fin', { group : group, pbnr : PbNr, }, redirect, 'text');
           
           function redirect(data) {
 

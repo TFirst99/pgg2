@@ -1,7 +1,7 @@
 
 
 
-$.post('php/status.php', { stage : stage, group : group, pbnr : PbNr, change : 'change' }, xxx, 'text');
+$.post('/api/status', { stage : stage, group : group, pbnr : PbNr, change : 'change' }, xxx, 'text');
 
 
 
@@ -35,7 +35,7 @@ function normal_random(mean, variance) {
 }
 
 function getReady() {
-     $.post('php/status.php', { stage : stage, group : group, pbnr : PbNr }, switchResp, 'text');
+     $.post('/api/status', { stage : stage, group : group, pbnr : PbNr }, switchResp, 'text');
 }
 
 function switchResp(data) {

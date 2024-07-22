@@ -16,7 +16,7 @@ $(document).ready(function() {
      own = 0.0;
      
      
-     $.post("php/get.php", { type: "effectiveness", grp: group, pbnr : PbNr }, processAndShow);
+     $.post("/api/get", { type: "effectiveness", grp: group, pbnr : PbNr }, processAndShow);
      
      function processAndShow(data) {
           
@@ -335,7 +335,7 @@ $(document).ready(function() {
                e4 = Math.round(parseFloat(e4)*10)/10;
                e5 = Math.round(parseFloat(e5)*10)/10;
                
-               if(submitted != 1) {  $.post("php/add.php", { type: "effectiveness", grp: group, pbnr : PbNr, e1 : e1, e2 : e2, e3 : e3, e4 : e4, e5 : e5, RT : elapsed, errors : error_count }, test); }
+               if(submitted != 1) {  $.post("/api/add", { type: "effectiveness", grp: group, pbnr : PbNr, e1 : e1, e2 : e2, e3 : e3, e4 : e4, e5 : e5, RT : elapsed, errors : error_count }, test); }
                submitted = 1;
                
                

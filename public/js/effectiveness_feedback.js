@@ -9,7 +9,7 @@ function updateContent() {
      
      var height = $('.rect_outside').height();
      
-     $.post("php/get.php", { type: "effectiveness", grp: group, pbnr : PbNr }, processAndShow);
+     $.post("/api/get", { type: "effectiveness", grp: group, pbnr : PbNr }, processAndShow);
      
      function processAndShow(data) {
      

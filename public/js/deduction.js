@@ -8,7 +8,7 @@ $(document).ready(function() {
      
      var width = $('.rect_outsideCon').width();
               
-     $.post("php/get.php", { type: "contribution", grp: group, pbnr : PbNr }, processAndShow);
+     $.post("/api/get", { type: "contribution", grp: group, pbnr : PbNr }, processAndShow);
       
      function processAndShow(data) {
       
@@ -58,7 +58,7 @@ $(document).ready(function() {
      var ef4 = 1.0;
      var ef5 = 1.0;
      
-     $.post("php/get.php", { type: "effectiveness", grp: group, pbnr : PbNr }, processAndShowEf);
+     $.post("/api/get", { type: "effectiveness", grp: group, pbnr : PbNr }, processAndShowEf);
      
      function processAndShowEf(data) {
           
@@ -307,7 +307,7 @@ $(document).ready(function() {
                var elapsed = (new Date() - window.start) / 1000;
                evt.preventDefault();
                
-               if(submitted != 1) { $.post("php/add.php", { type: "deduction", grp: group, pbnr : PbNr, ded1 : 0, ded2 : ded2, ded3 : ded3, ded4 : ded4, ded5 : ded5, RT : elapsed, errors : error_count  }, test); }
+               if(submitted != 1) { $.post("/api/add", { type: "deduction", grp: group, pbnr : PbNr, ded1 : 0, ded2 : ded2, ded3 : ded3, ded4 : ded4, ded5 : ded5, RT : elapsed, errors : error_count  }, test); }
                submitted = 1;
                
                

@@ -7,7 +7,7 @@ $(document).ready(function() {
      setTimeout(function() {
           $("#container").fadeTo(650,0);
           setTimeout(function() {
-               $.post("php/js_round.php", { grp: group, pbnr : PbNr }, round);
+               $.post("/api/js_round", { grp: group, pbnr : PbNr }, round);
           },640); 
      },1800);   
      

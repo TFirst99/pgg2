@@ -2,7 +2,7 @@ var con;
 
 
 
-$.post("php/js_round.php", { grp: group, pbnr : PbNr }, round);
+$.post("/api/js_round", { grp: group, pbnr : PbNr }, round);
  
  function round(data) {
       
@@ -17,7 +17,7 @@ function updateContent() {
      
      var width = $('.rect_outsideCon').width();
               
-     $.post("php/get.php", { type: "contribution", grp: group, pbnr : PbNr }, processAndShow);
+     $.post("/api/get", { type: "contribution", grp: group, pbnr : PbNr }, processAndShow);
       
      function processAndShow(data) {
       
