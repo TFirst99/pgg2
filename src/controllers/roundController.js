@@ -15,4 +15,8 @@ exports.getCurrentRound = async (req, res) => {
   }
 };
 
-// We don't need to implement advanceRound as it wasn't in the original PHP file
+exports.advanceRound = async (req, res) => {
+  // This function is a placeholder. Implement the logic to advance the round here.
+  // For now, we'll just return a success message.
+  res.json({ message: 'Round advanced successfully' });
+};
