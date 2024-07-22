@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+
+	<title>---</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="css/effectiveness.css" rel="stylesheet" type="text/css">
+		
+	<script src="js/jquery.js"></script>
+	
+	<script>
+	var stage = 'effectiveness';
+	</script>
+	
+	<script src="js/main.js"></script>
+	<script src="js/effectiveness.js"></script>
+	
+</head>
+
+
+<body>
+	
+	<div id='container1'>
+		<h2 style = 'font-size:230%; margin-top:360px'>shifting stage</h2>
+	</div>
+	
+	<div id='container2'>
+	
+	<h1>shifting stage</h1>
+	<div id="explanation">
+	<p>You can now shift deduction effectiveness to other group members.</p>
+	<p>By shifting deduction effectiveness, you can change how many monetary units (MUs) group members can deduct from other group members by assigning deduction points (DPs) in the Deduction Stage.</p>
+	</div>
+	
+	<form name="effectiveness" action="#" method="post" id='send'>
+		
+	<div id="content">
+		
+	<table>
+		<tr>
+			<td><img src="symbols/you.png"></td>
+			<td><img src="symbols/s1.png"></td>
+			<td><img src="symbols/s2.png"></td>
+			<td><img src="symbols/s3.png"></td>
+			<td><img src="symbols/s4.png"></td>
+		</tr>
+		<tr>
+			<td><div class="rect_outside"><div class="label" id="l1">??</div><div class="rect_inside1 rect11"></div><div class="rect_inside2 rect12"></div></div></td>
+			<td><div class="rect_outside"><div class="label" id="l2">??</div><div class="rect_inside1 rect21"></div><div class="rect_inside2 rect22"></div></div></td>
+			<td><div class="rect_outside"><div class="label" id="l3">??</div><div class="rect_inside1 rect31"></div><div class="rect_inside2 rect32"></div></div></td>
+			<td><div class="rect_outside"><div class="label" id="l4">??</div><div class="rect_inside1 rect41"></div><div class="rect_inside2 rect42"></div></div></td>
+			<td><div class="rect_outside"><div class="label" id="l5">??</div><div class="rect_inside1 rect51"></div><div class="rect_inside2 rect52"></div></div></td>
+		</tr>
+		<tr>
+			<td><input type="text" class="input" id="e1" value = "1.0" maxlength=3, disabled></td>
+			<td><input type="text" class="input" id="e2" value = "0.0" maxlength=3></td>
+			<td><input type="text" class="input" id="e3" value = "0.0" maxlength=3></td>
+			<td><input type="text" class="input" id="e4" value = "0.0" maxlength=3></td>
+			<td><input type="text" class="input" id="e5" value = "0.0" maxlength=3></td>
+		</tr>
+	</table>
+	
+	<div id='error'></div>
+	
+	</div>
+	
+	<input type="submit" value="accept & proceed" class="submit-active" id='submit'>
+
+	</form>
+	
+
+	
+	<div class="inner"> </div>
+	
+	</div>
+	
+</body>
+
+
+
+
+
+
+</html>

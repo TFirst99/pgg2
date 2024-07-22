@@ -1,0 +1,249 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<body>
+
+<title>Instructions</title>	
+
+<style type="text/css">
+
+html  { font-size: 11pt; font-family: Verdana, Arial, sans-serif; line-height:180%; }
+body { text-align:center; }
+table { font-size: 11pt; margin: 20px auto 0px auto; width:710px; text-align: left; border-collapse:collapse; text-align: left;  }
+
+div.instructions {  margin: 20px auto 0px auto; width:700px; text-align: justify; }
+div.instructions2 {  margin: 20px auto 0px auto; width:1200px; text-align: justify; }
+
+h4 { margin-bottom:42px; margin-top:95px; font-size:15pt }
+
+td.question { vertical-align:middle; padding-top:12px; padding-bottom:12px; padding-left:10px; padding-right:15px;  }
+td.button { margin: 50px auto 0px auto; width:26px; text-align: center; }
+tr.highlight { background-color:#ededed;  }
+
+img.triangle { width:210px; height:45px; display: block; margin: 5px auto 5px 15px; }
+img.anchor   { width:26px; margin:auto; text-align: center; }
+
+p.error  { text-align: center; margin: 75px auto -120px auto; padding:0px; width:630px; height:130px; color:#B00000; font-weight:bold;  }
+p.submit { text-align: center; margin: 50px auto 10px auto; width:630px; height:130px;  }
+
+hr { width:680px; }
+
+table.FragenSVO {  margin: 40px auto 0px auto; border-collapse:collapse; width:300px; }
+td.ButtonSVO { width: 80px; padding: auto; vertical-align: middle; text-align: center;  padding: 10px 5px;  }
+
+table.zweiterteil { margin: 40px auto 0px auto; }
+td.spalte1 { padding: 22px 37px 22px 110px; vertical-align: top; }
+td.spalte2 { padding: 22px 30px 22px 110px; vertical-align: top; }
+.feld1 { height: 19px; width: 33px; text-align: right; padding-right:3px; }
+.feld2 { height: 17px; width: 123px; text-align: left; padding-left:3px; vertical-align:text-top; font-size:12px; }
+.feld5 { height: 19px; width: 260px; text-align: left; padding-right:3px;   padding-left:3px; }
+
+li { padding:5px; }
+
+</style>
+
+</body>
+
+<?
+
+$cubicle = $_GET['cub'];
+print '<form name="next" action="../training/2_deduction_training.html?cub=' . $cubicle . '" method="post" id="send">'
+
+?>
+
+
+
+<!-- page -->
+
+<div class = "instructions">
+<center><h4>Instructions</h4></center>
+You have now finished Period 1 of the experiment.
+<br><br>
+You only had to make a contribution decision in Period 1. 
+Starting with Period 2, each Period will have two stages: a <b>Contribution Stage</b> and a <b>Deduction Stage</b>. 
+<br><br>
+The order of the Stages is the following:
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Contribution Stage<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Deduction Stage
+<br><br>
+In the Contribution Stage you will have to decide how much to contribute to a project, 
+exactly like you did in Period 1. For your convenience, 
+we summarize the instructions for the Contribution Stage below, before presenting the Deduction Stage.
+
+</div>
+
+<div class = "instructions">
+<center><h4>Contribution Stage</h4></center>
+<list>
+<li>At the start of the Contribution Stage, you and the other members each receive 20 MUs.</li>
+<li>You and each of the other members will then decide how many of these 20 MUs to contribute to a project.</li>
+<li>The total amount of MUs contributed to the project by group members will be multiplied by 1.5. This is the output of the project.</li>
+<li>The output will be divided equally among the 5 group members.</li>
+<li>Your earnings from the Contributions Stage = MUs kept to yourself + 1.5 * (sum of all MUs contributed to the project / 5)</li>
+<li>After you and the all other group members have made your contribution, you will see how much each group member contributed to the project, the output of the project, and the earnings of each group member.</li>
+</list>
+
+
+</div>
+
+<div class = "instructions">
+<center><h4>Deduction Stage</h4></center>
+
+In the deduction stage, you have to decide whether or not to assign <b>Deduction Points</b> (abbreviated as <b>DP</b>) 
+to other members of your group. 
+You can assign up to a maximum of 10 DPs to each other group member; 
+thus, in total, you can assign up to 40 DPs, irrespective of your earnings from the Contribution Stage. 
+<br><br>
+Each DP you assign reduces your own earnings by <b>1 MU</b>, and reduces the earnings of the person you assign 
+it to by a number of MUs equal to your <b>deduction effectiveness</b>. Your and all other group member's deduction 
+effectiveness is <b>1.0</b>.
+<br><br>
+Your earnings from the Contribution Stage will be reduced by the total number of DPs you assign to 
+other group member and by the deductions you receive from the other group members. 
+<br><br><br>
+Consider the following hypothetical example of a group member A, who decides to assign:
+<br><br>
+<i>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8 DPs to B<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 DPs to C<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 DPs to D<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 DPs to E<br>
+</i>
+<br><br>
+Each DP that A assigns to others reduces his/her own payoff by 1 MU. 
+In this case, A assigned a total of 8 + 2 + 1 = 11 DPs, which will cost him/her 11 MUs. 
+<br><br>
+Since A's deduction effectiveness is 1.0, the other members' earnings from the Contribution Stage 
+are reduced by his/her deductions in the following way:
+<br><br>
+<i>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B's payoff would be reduced by 8 * 1.0 = 8 MUs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C's payoff would be reduced by 2 * 1.0 = 2 MUs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D's payoff would be reduced by 0 * 1.0 = 0 MUs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E's payoff would be reduced by 1 * 1.0 = 1 MUs<br>
+</i>
+<br><br>
+
+The other group members also decide on how many DPs to assign to A 
+(and to every other group member). Suppose, for the sake of example, that:
+<br><br>
+<i>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B assigns 1 DPs to A, reducing his/her payoff by 1 * 1.0 = 1 MUs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C assigns 0 DPs to A, reducing his/her payoff by 0 * 1.0 = 0 MUs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D assigns 3 DPs to A, reducing his/her payoff by 3 * 1.0 = 3 MUs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E assigns 5 DPs to A, reducing his/her payoff by 5 * 1.0 = 5 MUs<br>
+</i>
+<br><br>
+Thus, in the hypothetical example, <i>A</i> would spend 11 MUs for assigning DPs, and would lose 9 MUs 
+through the DPs he/she received from other group members. His/her earnings 
+in this Period would thus be reduced by 20 MUs.
+
+<br><br><br>
+You will be informed about how other group members assigned DPs after all have made their decisions. You will then see how many DPs each member assigned to each other member and the earnings of each group member.
+<br><br>
+We will now proceed to explain the computer interface for the Deduction Stage.
+
+</div>
+
+<div class = "instructions">
+<center><h4>Computer interface</h4></center>
+
+At the time you will have to make your decision to assign Deduction Points, you will see a screen on the computer similar to this one:
+<br><br>
+
+</div>
+
+<div class = "instructions2">
+<img src="pictures/deduction_1_10.jpg" style = "width:100%;">
+</div>
+
+<div class = "instructions">
+
+
+
+<br><br>
+
+On this screen ...
+<br>
+<list>
+	<li>each column represents one group member</li>
+	<li>the first row shows you the contribution to the project of each member from the previous Contribution Stage</li>
+	<li>the blue numbers on the left indicate the deduction effectiveness of each group member</li>
+	<li>the light orange bar will show you how much DPs you would assign in total (and therefore how much MUs this would cost you)</li>
+</list>
+
+<br><br>
+By typing numbers in the small box below each column you can decide how many DPs you want to assign to the selected group member. 
+<br><br>
+To make your decision, you have click on 'accept & proceed'. <b>As soon as you do this, you will not be able to change your decision</b>.
+
+<br><br><br>
+After everyone has made their decision in the Deduction Stage, you will receive feedback about your decisions and the decision of the other group members on a screen similar to this one:
+<br><br>
+
+</div>
+
+<div class = "instructions2">
+<img src="pictures/deduction_2_10.jpg" style = "width:100%;">
+</div>
+
+<div class = "instructions">
+
+
+
+<br><br>
+
+On this screen ...
+<br>
+<list>
+	<li>the orange bars show you how many DP each group member spend</li>
+	<li>the yellow bars below each group member indicate how many DPs this group member received from the other group members</li>
+	<li>The small number next to the yellow bar shows by how much the earnings of this group member are decreased
+	<ul>
+	<li>This number is calculated by taking the deduction effectiveness (blue numbers on the left) multiplied by the number of DPs.</li>
+	</ul>
+	</li>
+</list>
+
+
+</div>
+
+<div class = "instructions">
+<center><h4>Earnings</h4></center>
+
+Your <b>earnings in Period 2</b> is the sum of the earnings from the Contribution Stage and the Deduction Stage. 
+Note that this sum might be negative.
+
+<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your earnings = <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+  &nbsp;&nbsp;Earnings from Contribution Stage<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  &nbsp;&nbsp;Costs for assigning DPs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  &nbsp;&nbsp;MU deductions through DPs received from other group members<br>
+
+<br>
+
+Please be aware that in the unlikely event that your total earnings at the end of the experiment are negative, 
+we will deduce these earnings from your show-up fee of 3 euros, at the rate of 100 MUs = 2.50 euros.
+
+<br><br>
+Before Period 2 starts we want to make sure that everybody has understood the rules correctly. 
+Therefore, you will be asked a few comprehension questions. 
+We will not proceed before everybody has answered all questions correctly.
+
+<br><br>
+If you have any questions, please raise your hand. If you do not have any questions at the moment, press the button below.
+
+
+</div>
+
+<p class='submit'><input type='submit' value=' I understood the instructions '></p>
+
+
+
+
+
+<!-- page -->
+
+</html>

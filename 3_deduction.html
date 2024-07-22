@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<head>
+
+	<title>---</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="css/deduction.css" rel="stylesheet" type="text/css">
+		
+	<script src="js/jquery.js"></script>
+	
+	<script>
+	var stage = 'deduction';
+	</script>
+	
+	<script src="js/main.js"></script>
+	<script src="js/deduction.js"></script>
+	
+</head>
+
+
+<body>
+	
+	<div id='container1'>
+		<h2 style = 'font-size:230%; margin-top:360px'>deduction stage</h2>
+	</div>
+	
+	<div id='container2'>
+	
+	<h1>deduction stage</h1>
+	<div id="explanation">
+	<p>You can now assign deduction points (DPs).<br>You can maximally assign 10 DPs per group member.</p>
+	</div>
+	
+	<form name="deduction" action="#" method="post" id='send'>
+		
+	<div id="content">
+		
+	<table>
+		<tr>
+			<td style='text-align:right; padding-right:150px;'></td>
+			<td><img src="symbols/you.png"></td>
+		  <td class='costs'><div class='costs' id='c55' valign="middle"></div></td>
+			<td><img src="symbols/s1.png"></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>
+			<td><img src="symbols/s2.png"></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>
+			<td><img src="symbols/s3.png"></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+			<td><img src="symbols/s4.png"></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>
+		</tr>
+		<tr>
+			<td valign="middle" class='first'>MUs contributed:</td>		
+			<td class='second' valign="middle"><div class="rect_outsideCon"><div class="labelCon" id="rC1">?</div><div class="rect_insideCon rectContr1"></div></div></td>
+		  <td class='costs' valign="middle"><div class='costs' id='c55'></div></td>
+			<td class='second' valign="middle"><div class="rect_outsideCon"><div class="labelCon" id="rC2">?</div><div class="rect_insideCon rectContr2"></div></div></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>
+			<td class='second' valign="middle"><div class="rect_outsideCon"><div class="labelCon" id="rC3">?</div><div class="rect_insideCon rectContr3"></div></div></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>
+			<td class='second' valign="middle"><div class="rect_outsideCon"><div class="labelCon" id="rC4">?</div><div class="rect_insideCon rectContr4"></div></div></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>
+			<td class='second' valign="middle"><div class="rect_outsideCon"><div class="labelCon" id="rC5">?</div><div class="rect_insideCon rectContr5"></div></div></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>
+		</tr>
+		<tr>
+			<td style='padding-bottom:50px;' class='first' valign="middle">DP costs:</td>			
+			<td style='padding-bottom:50px;' class='second' valign="middle"><div class="rect_outsideDed1"><div class="labelDed1" id="rDed1" style='color:#f3f2ff'>?</div><div class="rect_insideDed1 rectDed1"></div></div></td>
+      <td class='costs' valign="middle"><div class='costs' id='c55' valign="middle"></div></td>
+			<td style='padding-bottom:50px;' class='second' valign="middle"><div class="rect_outsideDed1 inactive"><div class="labelDed1" id="rDed2">?</div></div></td>
+			<td class='costs' valign="middle"><div class='costs' id='c55' valign="middle"></div></td>		
+			<td style='padding-bottom:50px;' class='second' valign="middle"><div class="rect_outsideDed1 inactive"><div class="labelDed1" id="rDed3">?</div></div></td>
+			<td class='costs' valign="middle"><div class='costs' id='c55' valign="middle"></div></td>
+			<td style='padding-bottom:50px;' class='second' valign="middle"><div class="rect_outsideDed1 inactive"><div class="labelDed1" id="rDed4">?</div></div></td>
+			<td class='costs' valign="middle"><div class='costs' id='c55' valign="middle"></div></td>		
+			<td style='padding-bottom:50px;' class='second' valign="middle"><div class="rect_outsideDed1 inactive"><div class="labelDed1" id="rDed5">?</div></div></td>
+			<td class='costs' valign="middle"><div class='costs' id='c55' valign="middle"></div></td>		
+		</tr>		
+		<tr>
+			<td valign="middle" class='first'><img src="symbols/you.png" class='small'> <span id='e1' class='effectiveness'>(1.0)</div></td>			
+			<td class='second' valign="middle"><div class="greyed"></div></td>
+			<td class='costs'><div class='costs' id='c1' valign="middle"></div></td>
+			<td class='second' valign="middle"><div class="rect_outsideDed2"><div class="labelDed2" id="C11" style='color:#f3f2ff'>?</div><div class="rect_insideDed2 rC11"></div></div></td>			
+			<td class='costs'><div class='costs' id='c2' valign="middle"></div></td>		
+			<td class='second' valign="middle"><div class="rect_outsideDed2"><div class="labelDed2" id="C12" style='color:#f3f2ff'>?</div><div class="rect_insideDed2 rC12"></div></div></td>
+			<td class='costs'><div class='costs' id='c3' valign="middle"></div></td>		
+			<td class='second' valign="middle"><div class="rect_outsideDed2"><div class="labelDed2" id="C13" style='color:#f3f2ff'>?</div><div class="rect_insideDed2 rC13"></div></div></td>
+			<td class='costs'><div class='costs' id='c4' valign="middle"></div></td>		
+			<td class='second' valign="middle"><div class="rect_outsideDed2"><div class="labelDed2" id="C14" style='color:#f3f2ff'>?</div><div class="rect_insideDed2 rC14"></div></div></td>
+			<td class='costs'><div class='costs' id='c5' valign="middle"></div></td>		
+		</tr>
+		<tr>
+			<td valign="middle" class='first'><img src="symbols/s1.png" class='small'> <span id='e2' class='effectiveness'>(1.0)</div></td>			
+			<td class='second' valign="middle"><div class="rect_outsideDed2 inactive"><div class="labelDed2" id="rD21">?</div></div></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+			<td class='second' valign="middle"><div class="greyed"></div></td>								
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+			<td class='second' valign="middle"><div class="rect_outsideDed2 inactive"><div class="labelDed2" id="rD23">?</div></div></td>	
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+			<td class='second' valign="middle"><div class="rect_outsideDed2 inactive"><div class="labelDed2" id="rD24">?</div></div></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+			<td class='second' valign="middle"><div class="rect_outsideDed2 inactive"><div class="labelDed2" id="rD25">?</div></div></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+		</tr>		
+		<tr>
+			<td valign="middle" class='first'><img src="symbols/s2.png" class='small'> <span id='e3' class='effectiveness'>(1.0)</div></td>			
+			<td class='second' valign="middle"><div class="rect_outsideDed2 inactive"><div class="labelDed2" id="rD31">?</div></div></td>		
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>
+			<td class='second' valign="middle"><div class="rect_outsideDed2 inactive"><div class="labelDed2" id="rD32">?</div></div></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+			<td class='second' valign="middle"><div class="greyed"></div></td>				
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+			<td class='second' valign="middle"><div class="rect_outsideDed2 inactive"><div class="labelDed2" id="rD34">?</div></div></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+			<td class='second' valign="middle"><div class="rect_outsideDed2 inactive"><div class="labelDed2" id="rD35">?</div></div></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+		</tr>	
+		<tr>
+			<td valign="middle" class='first'><img src="symbols/s3.png" class='small'> <span id='e4' class='effectiveness'>(1.0)</div></td>
+			<td class='second' valign="middle"><div class="rect_outsideDed2 inactive"><div class="labelDed2" id="rD41">?</div></div></td>	
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+			<td class='second' valign="middle"><div class="rect_outsideDed2 inactive"><div class="labelDed2" id="rD42">?</div></div></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+			<td class='second' valign="middle"><div class="rect_outsideDed2 inactive"><div class="labelDed2" id="rD43">?</div></div></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+			<td class='second' valign="middle"><div class="greyed"></div></td>					
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+			<td class='second' valign="middle"><div class="rect_outsideDed2 inactive"><div class="labelDed2" id="rD45">?</div></div></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+		</tr>
+		<tr>
+			<td valign="middle" class='first'><img src="symbols/s4.png" class='small'> <span id='e5' class='effectiveness'>(1.0)</div></td>
+			<td class='second' valign="middle"><div class="rect_outsideDed2 inactive"><div class="labelDed2" id="rD52">?</div></div></td>	
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+			<td class='second' valign="middle"><div class="rect_outsideDed2 inactive"><div class="labelDed2" id="rD53">?</div></div></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+			<td class='second' valign="middle"><div class="rect_outsideDed2 inactive"><div class="labelDed2" id="rD54">?</div></div></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+			<td class='second' valign="middle"><div class="rect_outsideDed2 inactive"><div class="labelDed2" id="rD55">?</div></div></td>
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+			<td class='second' valign="middle"><div class="greyed"></div></td>					
+			<td class='costs'><div class='costs' id='c55' valign="middle"></div></td>		
+		</tr>	
+		<tr>
+			<td valign="middle" class='first'></td>
+			<td></td>
+			<td class='costs' valign="middle"><div class='costs'></div></td>		
+			<td><input type="text" class="input" id="d2" value = "" maxlength=2></td>
+			<td class='costs' valign="middle"><div class='costs'></div></td>		
+			<td><input type="text" class="input" id="d3" value = "" maxlength=2></td>
+			<td class='costs' valign="middle"></td>			
+			<td><input type="text" class="input" id="d4" value = "" maxlength=2></td>
+			<td class='costs' valign="middle"><div class='costs'></div></td>			
+			<td><input type="text" class="input" id="d5" value = "" maxlength=2></td>
+			<td class='costs' valign="middle"><div class='costs'></div></td>			
+		</tr>		
+	</table>
+	
+	<div id='error'></div>
+		</div>
+	
+	
+	<input type="submit" value="accept & proceed" class="submit-active" id='submit'>
+	
+	</form>
+	
+
+	
+	<div class="inner"> </div>
+	
+	</div>
+	
+</body>
+
+
+
+
+
+
+</html>

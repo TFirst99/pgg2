@@ -1,0 +1,242 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<body>
+
+<title>Instructions</title>	
+
+<style type="text/css">
+
+html  { font-size: 11pt; font-family: Verdana, Arial, sans-serif; line-height:180%; }
+body { text-align:center; }
+table { font-size: 11pt; margin: 20px auto 0px auto; width:710px; text-align: left; border-collapse:collapse; text-align: left;  }
+
+div.instructions {  margin: 20px auto 0px auto; width:700px; text-align: justify; }
+div.instructions2 {  margin: 20px auto 0px auto; width:1200px; text-align: justify; }
+
+h4 { margin-bottom:42px; margin-top:95px; font-size:15pt }
+
+td.question { vertical-align:middle; padding-top:12px; padding-bottom:12px; padding-left:10px; padding-right:15px;  }
+td.button { margin: 50px auto 0px auto; width:26px; text-align: center; }
+tr.highlight { background-color:#ededed;  }
+
+img.triangle { width:210px; height:45px; display: block; margin: 5px auto 5px 15px; }
+img.anchor   { width:26px; margin:auto; text-align: center; }
+
+p.error  { text-align: center; margin: 75px auto -120px auto; padding:0px; width:630px; height:130px; color:#B00000; font-weight:bold;  }
+p.submit { text-align: center; margin: 50px auto 10px auto; width:630px; height:130px;  }
+
+hr { width:680px; }
+
+table.FragenSVO {  margin: 40px auto 0px auto; border-collapse:collapse; width:300px; }
+td.ButtonSVO { width: 80px; padding: auto; vertical-align: middle; text-align: center;  padding: 10px 5px;  }
+
+table.zweiterteil { margin: 40px auto 0px auto; }
+td.spalte1 { padding: 22px 37px 22px 110px; vertical-align: top; }
+td.spalte2 { padding: 22px 30px 22px 110px; vertical-align: top; }
+.feld1 { height: 19px; width: 33px; text-align: right; padding-right:3px; }
+.feld2 { height: 17px; width: 123px; text-align: left; padding-left:3px; vertical-align:text-top; font-size:12px; }
+.feld5 { height: 19px; width: 260px; text-align: left; padding-right:3px;   padding-left:3px; }
+
+li { padding:5px; }
+
+</style>
+
+</body>
+
+<?
+
+$cubicle = $_GET['cub'];
+print '<form name="next" action="../training/3_effectiveness_training.html?cub=' . $cubicle . '" method="post" id="send">'
+
+?>
+
+
+<!-- page -->
+
+<div class = "instructions">
+<center><h4>Instructions for Periods 3-20</h4></center>
+You have now finished Period 2 of the experiment.
+<br><br>
+Period 2 had two stages: a Contribution Stage and a Deduction Stage.
+<br><br>
+In this experiment, there will 20 Periods.
+
+Periods 3-20 will have <b>three Stages</b>, the Contribution Stage, the Deduction Stage and the <b>Shifting Stage</b>. 
+The order of the Stages is the following:
+
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Shifting Stage<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Contribution Stage<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Deduction Stage
+<br><br>
+The Contribution Stage will be identical to the Contribution Stage of Periods 1 and 2. 
+The Deduction Stage will be identical to the Deduction Stage of Period 2, 
+except that your deduction effectiveness will depend on the Shifting Stage. 
+<br><br>
+We will now present the Shifting Stage; for your convenience, we summarize the instructions for 
+the Contribution Stage and the Deduction Stage afterwards. Therefore, the order in which these 
+instructions are presented here matches the order in which you will have to make decisions in your 
+group for the remaining Periods.
+</div>
+
+<div class = "instructions">
+<center><h4>Shifting Stage</h4></center>
+
+You and all other group members have a deduction effectiveness of 1.0.
+<br><br>
+In the Shifting Stage, you can decide to shift your deduction effectiveness to other group members. If you decide to shift your effectiveness, you can shift it to one or several other group members in units of 0.1.
+<br>
+Note that you can never shift more effectiveness than 1.0. Thus, your deduction effectiveness can never be negative.
+<br>
+However, if you shift effectiveness to another group member, you can always decide to take it back in later Periods. 
+<br><br>
+The deduction effectiveness of each group member will determine how much the DPs this group member assigns in the Deduction Stage will affect the earnings of others.
+
+<br><br><br>
+Consider the following hypothetical example of a group member <i>A</i>, who decides to assign:
+<br><br>
+<i>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.4 deduction effectiveness to B<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.0 deduction effectiveness to C<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.2 deduction effectiveness to D<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.0 deduction effectiveness to E<br>
+</i>
+
+<br>
+This would mean that <i>A</i> shifted 0.6 deduction effectiveness to others, and kept 0.4 for him/herself. 
+Other members also decide on how much of their own deduction effectiveness to shift to <i>A</i> 
+(and to all other group members). For instance:
+<br><br>
+<i>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B shifts 0.2 deduction effectiveness to A<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C shifts 0.8 deduction effectiveness to A<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D shifts 0.0 deduction effectiveness to A<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E shifts 0.6 deduction effectiveness to A<br>
+</i>
+<br>
+Thus, <i>A</i> receives 1.6 deduction effectiveness from others. <i>A</i>'s deduction effectiveness for this Period will be:
+
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>0.4 (kept to him/herself) + 1.6 (received from others) = 2.0</i>
+
+<br><br>
+Therefore, for each DP <i>A</i> would assign to another group member in the upcoming Deduction Stage of this Period, the payoff of that group member would be reduced by 2.0 MUs.
+
+<br><br><br>
+You can find out how much effectiveness other group members shifted after everybody has made their decision. At the end of the Shifting Stage, as well as in the Deduction Stage you will see the deduction effectiveness for each group member for that Period.
+
+<br><br>
+We will now proceed to explain the computer interface for the Shifting Stage.
+
+</div>
+
+<div class = "instructions">
+<center><h4>Computer interface</h4></center>
+
+At the time you will have to make your decision to shift your deduction effectiveness, you will see a screen on the computer similar to this one:
+
+
+</div>
+
+<div class = "instructions2">
+<img src="pictures/shifting_1_10.jpg" style = "width:100%;">
+</div>
+
+<div class = "instructions">
+
+<br><br>
+
+
+
+On this screen ...
+<br>
+<list>
+	<li>the number below each group member indicates how much of your deduction effectiveness you shift to this group member</li>
+	<li>the blue bars indicate the current deduction effectiveness of this group member</li>
+</list>
+
+<br><br>
+By typing numbers in the small box below each group member, you can decide how much of your deduction effectiveness you want to shift to the selected group member. 
+<br>
+To make your decision, you have click on 'accept & proceed'. <b>As soon as you press enter, you will not be able to change your decision</b>.
+
+<br><br>
+After everyone has made their decision in the Shifting Stage, you will receive feedback about the deduction effectiveness of each group member for this Period:
+
+<br><br>
+
+</div>
+
+<div class = "instructions2">
+<img src="pictures/shifting_2_10.jpg" style = "width:100%;">
+</div>
+
+<div class = "instructions">
+
+
+<br><br>
+
+On this screen ...
+<br>
+<list>
+	<li>each bar shows the deduction effectiveness for this group member</li>
+	<li>the dark blue areas show how you shifted your deduction effectiveness in this Period</li>
+</list>
+
+
+</div>
+
+<div class = "instructions">
+<center><h4>Contribution Stage</h4></center>
+<list>
+<li>At the start of the Contribution Stage, you and the other members each receive 20 MUs.</li>
+<li>You and each of the other members will then decide how many of these 20 MUs to contribute to a project.</li>
+<li>The total amount of MUs contributed to the project by group members will be multiplied by 1.5. This is the output of the project.</li>
+<li>The output will be divided equally among the 5 group members.</li>
+<li>Your earnings from the Contributions Stage = MUs kept to yourself + 1.5 * (sum of all MUs contributed to the project / 5)</li>
+<li>After you and the all other group members have made your contribution, you will see how much each group member contributed to the project, the output of the project, and the earnings of each group member.</li>
+</list>
+
+
+</div>
+
+<div class = "instructions">
+<center><h4>Deduction Stage</h4></center>
+<list>
+<li>In the Deduction Stage, you will decide whether to deduct MUs from other members of your group.</li>
+<li>You can assign up to 10 Deduction Points (DPs) to each other group member to decrease their earnings.</li>
+<li>Each Deduction Point you assign to another group member costs you 1 MU.</li>
+<li>For each DP you assign to another person, their earnings will be decreased by a number of MUs equal to your deduction effectiveness that will be determined in the shifting stage.</li>
+<li>After everybody made their decisions in the Deduction Stage, you will be informed on which group member assigned DPs to which other group member.</li>
+<li>At the end of the stage, you will be informed of your earnings for that Period.<br><br></li>
+<li>You can review the results of previous Periods on the summary screen by clicking on the respective Period number on the bottom of the screen.</li>
+</list>
+
+
+</div>
+
+<div class = "instructions">
+<center><h4>Earnings</h4></center>
+
+Your earnings for Periods 3-20 are the sum of the earnings from the Contribution Stage and the Deduction Stage of each Period. The Shifting Stage has no direct effect on your payoff.
+The sum of your earnings for all 20 Periods gives your total earnings for the experiment. 
+
+<br><br>
+There will be no further instructions from this point on. 
+
+<br><br>
+If you have any questions, please raise your hand. If you do not have any questions at the moment, press the button below.
+
+
+</div>
+
+<p class='submit'><input type='submit' value=' I understood the instructions '></p>
+
+
+
+
+
+<!-- page -->
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+
+	<title>---</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="css/effectiveness_feedback.css" rel="stylesheet" type="text/css">
+		
+	<script src="js/jquery.js"></script>
+	
+	<script>
+	var stage = 'effectiveness_feedback';
+	</script>
+	
+	<script src="js/main.js"></script>
+	<script src="js/effectiveness_feedback.js"></script>
+	
+</head>
+
+
+<body>
+	
+	<div id='container1'>
+		<img src="symbols/waiting.gif" id='wait'><br>
+		<h2>Waiting for other group members.</h2>
+	</div>
+	
+	<div id='container2'>
+	
+	<h1>shifting stage</h1>
+	<div id="explanation">
+	<p>All group members made their decision.</p>
+	<p>Here you see the deduction effectiveness<br>of each group member for this period.</p>
+	</div>
+			
+	<div id="content">
+		
+	<form name="effectiveness_feedback" action="#" method="post" id='send'>
+		
+	<table>
+		<tr>
+			<td><img src="symbols/you.png"></td>
+			<td><img src="symbols/s1.png"></td>
+			<td><img src="symbols/s2.png"></td>
+			<td><img src="symbols/s3.png"></td>
+			<td><img src="symbols/s4.png"></td>
+		</tr>
+		<tr>
+			<td><div class="rect_outside"><div class="label" id="l1">??</div><div class="rect_inside1 rect11"></div><div class="rect_inside2 rect12"></div></div></td>
+			<td><div class="rect_outside"><div class="label" id="l2">??</div><div class="rect_inside1 rect21"></div><div class="rect_inside2 rect22"></div></div></td>
+			<td><div class="rect_outside"><div class="label" id="l3">??</div><div class="rect_inside1 rect31"></div><div class="rect_inside2 rect32"></div></div></td>
+			<td><div class="rect_outside"><div class="label" id="l4">??</div><div class="rect_inside1 rect41"></div><div class="rect_inside2 rect42"></div></div></td>
+			<td><div class="rect_outside"><div class="label" id="l5">??</div><div class="rect_inside1 rect51"></div><div class="rect_inside2 rect52"></div></div></td>
+		</tr>
+	</table>
+		
+	<div id='error'></div>
+	
+	</div>
+	
+	<input type="submit" value="proceed" class="submit-active" id='submit'>
+	
+	</form>
+
+	</div>
+	
+	
+	<div class="inner"> </div>
+	
+	</div>
+	
+</body>
+
+
+
+
+
+
+</html>

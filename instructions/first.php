@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<body>
+
+<title>Instructions</title>	
+
+<style type="text/css">
+
+html  { font-size: 11pt; font-family: Verdana, Arial, sans-serif; line-height:180%; }
+body { text-align:center; }
+table { font-size: 11pt; margin: 20px auto 0px auto; width:710px; text-align: left; border-collapse:collapse; text-align: left;  }
+
+div.instructions {  margin: 20px auto 0px auto; width:700px; text-align: justify; }
+div.instructions2 {  margin: 20px auto 0px auto; width:1200px; text-align: justify; }
+
+h4 { margin-bottom:42px; margin-top:95px; font-size:15pt }
+
+td.question { vertical-align:middle; padding-top:12px; padding-bottom:12px; padding-left:10px; padding-right:15px;  }
+td.button { margin: 50px auto 0px auto; width:26px; text-align: center; }
+tr.highlight { background-color:#ededed;  }
+
+img.triangle { width:210px; height:45px; display: block; margin: 5px auto 5px 15px; }
+img.anchor   { width:26px; margin:auto; text-align: center; }
+
+p.error  { text-align: center; margin: 75px auto -120px auto; padding:0px; width:630px; height:130px; color:#B00000; font-weight:bold;  }
+p.submit { text-align: center; margin: 50px auto 10px auto; width:630px; height:130px;  }
+
+hr { width:680px; }
+
+table.FragenSVO {  margin: 40px auto 0px auto; border-collapse:collapse; width:300px; }
+td.ButtonSVO { width: 80px; padding: auto; vertical-align: middle; text-align: center;  padding: 10px 5px;  }
+
+table.zweiterteil { margin: 40px auto 0px auto; }
+td.spalte1 { padding: 22px 37px 22px 110px; vertical-align: top; }
+td.spalte2 { padding: 22px 30px 22px 110px; vertical-align: top; }
+.feld1 { height: 19px; width: 33px; text-align: right; padding-right:3px; }
+.feld2 { height: 17px; width: 123px; text-align: left; padding-left:3px; vertical-align:text-top; font-size:12px; }
+.feld5 { height: 19px; width: 260px; text-align: left; padding-right:3px;   padding-left:3px; }
+
+li { padding:5px; }
+
+</style>
+
+</body>
+
+<?
+
+$cubicle = $_GET['cub'];
+print '<form name="next" action="../training/1_contribution_training.html?cub=' . $cubicle . '" method="post" id="send">'
+
+?>
+
+
+
+
+
+<!-- page -->
+
+<div class = "instructions">
+<center><h2>Dear participant,</h2>
+<center><h4>thank you for participating in this experiment.</h4>
+</div>
+
+<div class = "instructions">
+Below, we will first provide you with an overview and then a detailed description of the experiment. 
+
+<br>
+You also find a shorter version of this instruction printed in front of you. But for now, please proceed with reading the instructions on this screen.
+<br>
+<b>It is very important that you fully understand the structure and rules of the experiment. </b>
+Therefore, we ask you to read the following text carefully. 
+If anything is unclear to you, please raise your hand. 
+One of the instructors will then come to you and answer your question. 
+Please never ask a question aloud.
+</div>
+
+<div class = "instructions">
+<center><h4>General Rules</h4></center>
+<list>
+<li>Please switch off your mobile phone.</li>
+<li>During the entire experiment, you are not allowed to talk with the other participants. </li>
+<li>You can use the provided pen and sheets of paper to make notes during the experiment.</li>
+<li>In the experiment you can earn money with the decisions you make. How much you earn will also depend on decisions by other participants. </li>
+<li>The experiment consists of several Periods.</li>
+<li>In the experiment, we will speak of Monetary Units (abbreviated as MU) instead of Euros. </li>
+<li>Your total earnings consist of the sum of your MU earnings over all Periods.</li>
+<li>At the end of the experiment, your total MU earnings will be converted to Euros at the exchange rate of 100 MUs = 2.50 euros. We will add a fixed show-up fee of 3 euros to this.</li>
+</list>
+</div>
+
+<div class = "instructions">
+<center><h4>Instructions</h4></center>
+You have been randomly assigned to a <b>group of 5 people</b>. 
+Hence, there are four other participants in your group. 
+They receive the same instructions as you, and the same rules apply to them. 
+Neither during nor after the experiment will you get to know the identity of the other people in your group, 
+nor will the other participants learn your identity.
+</div>
+
+<div class = "instructions">
+Each of the other group members will be represented by one of the following symbols.
+<br>
+<br>
+<center><img src="pictures/s1.png">&nbsp;&nbsp;&nbsp;&nbsp;<img src="pictures/s2.png">&nbsp;&nbsp;&nbsp;&nbsp;<img src="pictures/s3.png">&nbsp;&nbsp;&nbsp;&nbsp;<img src="pictures/s4.png"></center>
+
+<br>
+
+
+This symbol will identify the same group member across the whole experiment.<br>
+Each group member will have to make a contribution decision, which is described below. 
+
+</div>
+
+<div class = "instructions">
+<center><h4>Contribution decision</h4></center>
+You and all other group members receive <b>20 MUs</b>. 
+You will have to decide how many of these 20 MUs you keep and how many you contribute to a project. 
+You can choose any integer number between and including 0 and 20. 
+Each of the other group members also has to make this decision.
+<br><br>
+After all group members have made their contribution decision, you can see how much each group member contributed.  
+<br><br>
+<list>
+<li>The sum of all contributions in the group will be multiplied by 1.5</li>
+<li>This is the output of the project. </li>
+<li>The output is distributed equally among all group members, irrespective of how much each member contributed. </li>
+</list>
+
+<br><br>
+<b>Your earnings are the MUs you kept for yourself plus the MUs you receive from the project.</b>
+
+<br><br><br>
+Consider the following hypothetical example.
+<br><br>
+For the examples, instead of the symbols presented above, we will use letters the letters A, B, C, D, E  to denote members of this hypothetical group. 
+<br><br>
+
+<i>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A decides to contribute 10 MUs and keep 10 MUs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B decides to contribute 3 MUs and keep 17 MUs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C decides to contribute 0 MUs and keep 20 MUs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D decides to contribute 17 MUs and keep 3 MUs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E decides to contribute 20 MUs and keep 0 MUs<br>
+</i>
+
+<br><br>
+Thus, the sum of all contributions to the project for this Period are:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>sum of all contributions = 10 + 3 + 0 + 17 + 20 = 50 MUs</i>
+
+<br><br>
+The sum of contributions is then multiplied by 1.5, giving the output of the project:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>output of project = 1.5 * 50 = 75 MUs</i>
+
+<br><br>
+Thus, each group member receives from the project:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>each member's earnings from project = 75/5 = 15 MUs</i>
+
+
+<br><br>
+The earnings for each group member are:
+<br>
+<i>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A: 10 MUs (kept to him/herself) + 15 MUs (from the project) = 25 MUs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B: 17 MUs (kept to him/herself) + 15 MUs (from the project) = 32 MUs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C: 20 MUs (kept to him/herself) + 15 MUs (from the project) = 35 MUs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D: &nbsp;&nbsp;3 MUs (kept to him/herself) + 15 MUs (from the project) = 18 MUs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E: &nbsp;&nbsp;0 MUs (kept to him/herself) + 15 MUs (from the project) = 15 MUs<br>
+</i>
+<br>
+<br>
+After you and the all other group members have made your contribution, 
+you will see how much each group member contributed to the project, 
+the output of the project, and the earnings of each group member.
+
+
+
+</div>
+
+<div class = "instructions">
+<center><h4>Earnings</h4></center>
+
+Your <b>earnings</b> for the Period can be calculated with the following formula:
+<br><br>
+&nbsp;Your earnings = MUs kept to yourself + 1.5 * (sum of all MUs contributed to the project / 5)
+<br><br>
+We will now proceed to explain the computer interface.
+
+</div>
+
+<div class = "instructions">
+<center><h4>Computer interface</h4></center>
+
+To interact with the computer, you use the keyboard and the mouse.
+<br><br>
+At the time you will have to make your contribution decision, you will see the following screen on the computer:
+<br><br>
+
+</div>
+
+<div class = "instructions2">
+<img src="pictures/contribution_1.jpg" style = "width:100%;">
+</div>
+
+<div class = "instructions">
+
+<br><br>
+By using the numbers from 0 to 9 on the keyboard you can indicate how much of your 20 MU you want to contribute to the project. As soon as you press a number, a bar will indicate how much you would contribute and how much you would keep for yourself.
+<br><br>
+To make your decision, you have click on 'accept & proceed'. <b>As soon as you do this, you will not be able to change your decision.</b>
+
+</div>
+
+<div class = "instructions">
+<center><h4>Training</h4></center>
+
+Before Period 1 starts we want to make sure that everybody has understood the rules correctly. Therefore, you will be asked a few comprehension questions on the computer. We will not proceed before everybody has answered all questions correctly.
+If you have any questions, please raise your hand. 
+
+<br>
+If you do not have any questions at the moment press the button below.
+
+</div>
+
+<p class='submit'><input type='submit' value=' I understood the instructions '></p>
+
+
+
+<!-- page -->
+
+</html>
