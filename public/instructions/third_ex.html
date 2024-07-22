@@ -2,7 +2,7 @@
 
 <html>
 <body>
-
+<input type="hidden" id="cubicle-input">
 <title>Instructions</title>	
 
 <style type="text/css">
@@ -44,13 +44,9 @@ li { padding:5px; }
 
 </body>
 
-<?
-
-$cubicle = $_GET['cub'];
-print '<form name="next" action="../training/3_effectiveness_training.html?cub=' . $cubicle . '" method="post" id="send">'
-
-?>
-
+<form name="next" action="../training/3_effectiveness_training.html" method="get" id="send">'
+    <input type="hidden" id="cubicle-input">
+</form>
 
 <!-- page -->
 
@@ -231,11 +227,15 @@ If you have any questions, please raise your hand. If you do not have any questi
 
 </div>
 
-<p class='submit'><input type='submit' value=' I understood the instructions '></p>
+<p class='submit'><input type='button' id="understood-button" value=' I understood the instructions '></p>
 
-
-
-
+<script>
+var cubicle = new URLSearchParams(window.location.search).get('cub');
+document.getElementById('cubicle-input').value = cubicle;
+document.getElementById('understood-button').addEventListener('click', function() {
+    window.location.href = '../training/3_effectiveness_training.html?cub=' + cubicle;
+});
+</script>
 
 <!-- page -->
 
