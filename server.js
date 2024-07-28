@@ -3,14 +3,14 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const path = require('path');
 
+const app = express();
+
 const addBehaviorRoute = require('./src/routes/addBehavior');
 const earningsRoute = require('./src/routes/earnings');
 const finRoute = require('./src/routes/fin');
 const getRoute = require('./src/routes/get');
 const roundRedirectRoute = require('./src/routes/roundRedirect');
 const statusRoute = require('./src/routes/status');
-
-const app = express();
 
 // Middleware
 app.use(cors());
