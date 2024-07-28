@@ -22,7 +22,7 @@ function shuffle(array) {
 }
 
 var order = [1,2,3];
-//var order = [1];
+var order = [];
 shuffle(order);
 i = 0;
 

@@ -48,170 +48,29 @@ var max_rounds = 4;
 
 if(cubicle == 1) {
      
-     group = 0;
-     PbNr = 0;
+     group = 1;
+     PbNr = 1;
 }
 else if(cubicle == 2) {
      
-     group = 2;
-     PbNr = 5;     
+     group = 1;
+     PbNr = 2;     
 }
 else if(cubicle == 3) {
      
-     group = 3;
-     PbNr = 1;     
+     group = 1;
+     PbNr = 3;     
 }
 else if(cubicle == 4) {
      
-     group = 0;
-     PbNr = 0;     
+     group = 1;
+     PbNr = 4;     
 }
 else if(cubicle == 5) {
      
-     group = 2;
-     PbNr = 1;     
-}
-else if(cubicle == 6) {
-     
-     group = 5;
-     PbNr = 2;     
-}
-else if(cubicle == 7) {
-     
-     group = 3;
-     PbNr = 3;     
-}
-else if(cubicle == 8) {
-     
-     group = 4;
-     PbNr = 2;     
-}
-else if(cubicle == 9) {
-     
-     group = 0;
-     PbNr = 0;     
-}
-else if(cubicle == 10) {
-     
      group = 1;
      PbNr = 5;     
 }
-else if(cubicle == 11) {
-     
-     group = 5;
-     PbNr = 4;     
-}
-else if(cubicle == 12) {
-     
-     group = 2;
-     PbNr = 4;     
-}
-else if(cubicle == 13) {
-     
-     group = 0;
-     PbNr = 0;     
-}
-else if(cubicle == 14) {
-     
-     group = 1;
-     PbNr = 4;     
-}
-else if(cubicle == 15) {
-     
-     group = 3;
-     PbNr = 4;     
-}
-else if(cubicle == 16) {
-     
-     group = 4;
-     PbNr = 4;     
-}
-else if(cubicle == 17) {
-     
-     group = 1;
-     PbNr = 2;     
-}
-else if(cubicle == 18) {
-     
-     group = 5;
-     PbNr = 3;     
-}
-else if(cubicle == 19) {
-     
-     group = 0;
-     PbNr = 0;     
-}
-else if(cubicle == 20) {
-     
-     group = 4;
-     PbNr = 3;     
-}
-else if(cubicle == 21) {
-     
-     group = 1;
-     PbNr = 1;     
-}
-else if(cubicle == 22) {
-     
-     group = 0;
-     PbNr = 0;     
-}
-else if(cubicle == 23) {
-     
-     group = 2;
-     PbNr = 2;     
-}
-else if(cubicle == 24) {
-     
-     group = 4;
-     PbNr = 5;     
-}
-else if(cubicle == 25) {
-     
-     group = 5;
-     PbNr = 5;     
-}
-else if(cubicle == 26) {
-     
-     group = 1;
-     PbNr = 3;     
-}
-else if(cubicle == 27) {
-     
-     group = 3;
-     PbNr = 2;     
-}
-else if(cubicle == 28) {
-     
-     group = 2;
-     PbNr = 3;     
-}
-else if(cubicle == 29) {
-     
-     group = 4;
-     PbNr = 1;     
-}
-else if(cubicle == 30) {
-     
-     group = 0;
-     PbNr = 0;     
-}
-else if(cubicle == 31) {
-     
-     group = 3;
-     PbNr = 5;     
-}
-else if(cubicle == 32) {
-     
-     group = 5;
-     PbNr = 1;     
-}
-else if(cubicle == 33) {
-     
-     group = 0;
-     PbNr = 0;     
-}
-
 
 
 
