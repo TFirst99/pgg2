@@ -76,7 +76,7 @@ else if(cubicle == 5) {
 
 // update status
 
-$.post('api/status', { stage : stage, group : group, pbnr : PbNr, change : 'change' }, xxx, 'text');
+$.post('/api/status', { stage : stage, group : group, pbnr : PbNr, change : 'change' }, xxx, 'text');
 
 function xxx(data) {
      
@@ -113,7 +113,7 @@ function normal_random(mean, variance) {
 }
 
 function getReady() {
-     $.post('api/status', { stage : stage, group : group, pbnr : PbNr }, switchResp, 'text');
+     $.post('/api/status', { stage : stage, group : group, pbnr : PbNr }, switchResp, 'text');
 }
 
 function switchResp(data) {
